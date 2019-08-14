@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<title>Codenovate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: #c1e8f0;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/Users/Sanya/Downloads/coding.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Users/Sanya/Pictures/yayhi.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+h1 {
+  font-size:40;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="background-color:#ff8080;height:60px;position:fixed">
+  <!-- class="w3-bar w3-white w3-card" -->
+  <div style="background-color:#ff8080" id="myNavbar">
+    <img src="https://lh3.googleusercontent.com/-HUhGMhfuh50/XUd18pXywUI/AAAAAAAAEvk/_jaM1lJrN08i9BDdaCrSpeM7vyty0w7_ACK8BGAs/s0/haha.JPG" alt="Codenovate logo" style="width:40px;height:55px;">
+    <a href="#home" style="height:40px;position:absolute;top:50%;margin-top:-20px; color: #98d9e6" class="w3-bar-item w3-button w3-wide"><b>Codenovate<b></a>  
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="background-color:#ff8080;height:40px;top:50%;margin-top:10px">
+      <a href="#about" style= "color:white" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#team" style= "color: white" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OUR TEAM</a>
+      <a href="#techgalz" style= "color: white" class="w3-bar-item w3-button"> TECHGALZ</a>
+      <a href="#appnovators" style= "color: white" class="w3-bar-item w3-button"> APPNOVATORS</a>
+      <a href="#ai" style= "color: white" class="w3-bar-item w3-button"> AINNOVATORS</a>
+      <a href="#locations" style= "color: white" class="w3-bar-item w3-button">LOCATIONS</a>
+      <a href="#contact" style= "color: white" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#techgalz" onclick="w3_close()" class="w3-bar-item w3-button">TECHGALZ</a>
+  <a href="#appnovators" onclick="w3_close()" class="w3-bar-item w3-button">APPNOVATORS</a>
+  <a href="#ai" onclick="w3_close()" class="w3-bar-item w3-button">AInnovators</a>
+  <a href="#locations" onclick="w3_close()" class="w3-bar-item w3-button">LOCATIONS</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="text-align:center;width:100%">
+    <!-- class="w3-jumbo w3-hide-small" -->
+    <span style="color:#98d9e6;font-size:100px"><b>Codenovate</b></span><br>
+    <!-- <span class="w3-xxlarge w3-hide-large w3-hide-medium">Codenovate</span><br> -->
+    <!-- class="w3-large" -->
+    <span style="color:#ffffff;font-size:40px"><b>Inspiring kids to innovate with code.</b></span>
+    <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about us</a></p> -->
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Learn more about us</a></p>
+  </div>
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h1 class="w3-center" style = "color:#ff8080; font-size: 50px"><b>About Us</b></h1>
+  <div class="w3-row-padding w3-center" style="margin-top:60px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
+      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+      <p>Here at Codenovate, our goal is to cultivate an interest in technology in young kids. We do this with three programs across various libraries: TechGalz, Appnovators, and AI. At TechGalz, we encourage girls to participate in STEM by teaching them mobile app develpment and entrepreunurship in preparation to participate in Technovation. Appnovators is aimed to teach young kids AppInventor, a simple drag-and-drop mobile app programming language. Finally, AI exposes kids to Python and the foundations of AI algorithms and applications.
+
+</p>
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px;background-color:#FFFFFF" id="team">
+  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Our Team</b></h1>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:2%;padding-left:5%" >
+      <div class="w3-card" >
+        <!--  <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Sanya Garg</h3>
+          <p class="w3-opacity">Founder and President</p>
+          <p>Hi! My name is Sanya Garg and I am currently a sophomore at Monta Vista High School. Some of my hobbies are: art in all forms, playing ping pong, and playing the violin.  I enjoy programming and have a lot of experience in both Java and Python. I am currently a member of my school's  robotics team and have been interested in robotics and programming since fourth grade. I additionally ran the robotics club in Kennedy Middle School and represented the United States at the FLL World Championships in Hungary.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:5%;padding-left:2%">
+      <div class="w3-card">
+        <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">-->
+        <div class="w3-container">
+          <h3>Malavika Vutukuru</h3>
+          <p class="w3-opacity">Vice President</p>
+          <p>Hello! My name is Malavika Vutukuru and I also am a 9th grader. In school I am a part of the band program and play the trombone. Outside of school, I have been taking Carnatic singing classes for 9 years. I also volunteer as an escort at the Mountain View El Camino Hospital. I am currently taking Java in school and have prior experience in Python and Machine Learning from completing online courses through Coursera. I am also an active member of the robotics team at school.                        </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>-->
+    <!--<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <!-- <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>-->
+</div>
+
+
+
+<div class="bgimg-2"  style="padding:128px 16px" id="techgalz">
+<!--<div class="w3-container" style="padding:128px 16px;background-color:#c1e8f0" id="techgalz">-->
+  <h1 class="w3-center" style = "color:#ff8080; font-size: 50px"><b>TechGalz</b></h1>
+  <div class="w3-row-padding w3-center" style="margin-top:60px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
+      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+      <p>TechGalz is a comprehensive series in which our goal is to cultivate an interest in technology and entrepreneurship in young girls. We  teach girls AppInventor basics along with the foundations of entrepreneurship to prepare them to participate in Technovation, the largest female technology-entrepreneurship competition. We first teach these principles, and continue on to mentoring and supporting girls throughout the Technovation season.<p>
+
+</p>
+  </div>
+</div>
+
+
+
+
+
+<div class="w3-container" style="padding:128px 16px;background-color:#ffffff" id="appnovators">
+  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Appnovators</b></h1>
+  <div class="w3-row-padding w3-center" style="margin-top:60px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
+      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+      <p>Appnovators is an 8-week series that will fast track its students into developing cool android mobile applications. The primary programming language Appnovators will cover is AppInventor, a basic drag-and-drop app development platform. No programming experience is needed to participate in Appnovators.<p>
+
+</p>
+  </div>
+</div>
+
+
+
+<div class="w3-container" style="padding:128px 16px" id="ai">
+  <h1 class="w3-center" style = "color:#ff8080; font-size: 50px"><b>AInnovators</b></h1>
+  <div class="w3-row-padding w3-center" style="margin-top:60px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
+      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+      <p>AInnovators is an 8-week series that will fast track its students into developing cool android mobile applications. The primary programming language Appnovators will cover is AppInventor, a basic drag-and-drop app development platform. No programming experience is needed to participate in Appnovators.<p>
+
+</p>
+  </div>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="locations" style="background-color:#FFFFFF; padding:128px 16px" >
+  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Locations</b></h1>
+<div class="w3-quarter" style="margin-top:50px;width:49%;padding-right:2%;padding-left:10%">
+<div class="w3-card w3-white">
+  <img src="http://studiogarchitectsinc.com/wordpress/wp-content/uploads/Calabazas1.jpg" alt="CalabazasLibrary" style="width:100%">
+  </div>
+</div>
+
+<div class="w3-quarter" style="margin-top:50px;width:50%;padding-right:10%;padding-left:2%">
+<div class="w3-card w3-white">
+  <div class="w3-container">
+  <h3>Calabazas Library</h3>
+  <p>Appnovators: 4:00 to 5:30 from July 13 to August 31st</p>
+  <p>Techgalz: 5:30 to 7:30 from October 2 to April 16.</p>
+  <p>AInnovators: Coming soon!</p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  </div>
+  </div>
+</div>
+
+<!--<div class="w3-quarter" style="width:28%;padding-right:2%;padding-left:2%">
+<div class="w3-card w3-white">
+  <img src="https://www.losaltosca.gov/sites/default/files/styles/full_node_primary/public/imageattachments/library_commission/contact_info/1241/los_altos1.jpg?itok=eQGyBFTh" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Los Altos Library</h3>
+  <p>Appnovators:</p>
+  <p>Techgalz:</p>
+  <p>AI Program:</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter" style="width:32%;padding-right:5%;padding-left:2%">
+<div class="w3-card w3-white">
+  <img src="https://www.slcolibrary.org/sebin/r/p/westValley320x198.jpg" alt="West Valley Library" style="width:100%; height:100%">
+  <div class="w3-container">
+  <h3>West Valley Library</h3>
+  <p>Appnovators:</p>
+  <p>Techgalz:</p>
+  <p>AI Program:</p>
+  </div>
+  </div>
+</div>-->
+
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Contact Us</b></h1>
+  <p class="w3-center w3-large" style="color: #ff8080">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color: #98d9e6">  </i> Email: mail.techgalz@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit" style="color: #ff8080">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background-color: #c1e8f0">
+  <a href="#home" class="w3-button" style="background-color: #ff8080"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p> © 2019 by Codenovate. All Rights Reserved.  </p>
+  <p> We are a 501 (c) 3 non-profit organization with EIN of </p>
+  <p> Powered by HTML.</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
