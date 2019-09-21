@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<title>Codenovate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: #c1e8f0;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+h1 {
+  font-size:40;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="background-color:#ff8080;height:60px;position:fixed">
+  <!-- class="w3-bar w3-white w3-card" -->
+  <div style="background-color:#ff8080" id="myNavbar">
+    <img src="https://lh3.googleusercontent.com/-HUhGMhfuh50/XUd18pXywUI/AAAAAAAAEvk/_jaM1lJrN08i9BDdaCrSpeM7vyty0w7_ACK8BGAs/s0/haha.JPG" alt="Codenovate logo" style="width:40px;height:55px;">
+    <a href="index.html" style="height:40px;position:absolute;top:50%;margin-top:-20px; color: #98d9e6" class="w3-bar-item w3-button w3-wide"><b>Codenovate<b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="background-color:#ff8080;height:40px;top:50%;margin-top:10px">
+      <a href="aboutus.html" style= "color:white" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="ourteam.html" style= "color: white" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OUR TEAM</a>
+      <a href="programs.html" style= "color: white" class="w3-bar-item w3-button">PROGRAM DESCRIPTIONS</a>
+      <a href="locations.html" style= "color: white" class="w3-bar-item w3-button">LOCATIONS</a>
+      <a href="contact.html" style= "color: white" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="ourteam.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="programs.html" onclick="w3_close()" class="w3-bar-item w3-button">PROGRAM DESCRIPTIONS</a>
+  <a href="locations.html" onclick="w3_close()" class="w3-bar-item w3-button">LOCATIONS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
+</nav>
+
+
+
+<!-- Locations Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="locations" style="background-color:#FFFFFF; " >
+  <h1 class="w3-center" style = "color:#c1e8f0; font-size: 60px"><b>Upcoming and Current Programs</b></h1>
+
+<div class="w3-quarter" style="margin-top:50px;width:49%;padding-right:2%;padding-left:10%; margin-bottom:0px">
+<div class="w3-card w3-white">
+  <img src="http://studiogarchitectsinc.com/wordpress/wp-content/uploads/Calabazas1.jpg" alt="CalabazasLibrary" style="width:100%">
+</div>
+</div>
+
+<div class="w3-quarter" style="margin-top:50px;width:50%;padding-right:10%;padding-left:2%; margin-bottom:0px;">
+<div class="w3-card w3-white">
+  <div class="w3-container">
+  <h3>Calabazas Library</h3>
+  <p>Appnovators: 4:00 to 5:30 from July 13 to August 31st</p>
+  <p>Techgalz: 5:30 to 6:30 from September 17 to November 5.</p>
+  <p>AInnovators: Coming soon!</p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  </div>
+</div>
+
+</div>
+</div>
+
+<!-- Second Section -->
+<div class="w3-row-padding w3-theme-l1" id="locations" style="background-color:#FFFFFF; margin-top:0px; padding-bottom:80px" >
+<div class="w3-quarter" style="margin-top:0px;width:49%;padding-right:2%;padding-left:10%">
+<div class="w3-card w3-white">
+  <img src="https://www.lmsarch.com/sites/default/files/project/NHS_01.jpg" alt="NuevaSchool" style="width:100%">
+</div>
+</div>
+
+<div class="w3-quarter" style="margin-top:0px;width:50%;padding-right:10%;padding-left:2%">
+<div class="w3-card w3-white">
+  <div class="w3-container">
+  <h3>Nueva School</h3>
+  <p>AInnovators: Coming soon!</p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+  <p>  <br> </p>
+
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="bgimg-2"  style="padding:128px 16px" id="past">
+<!--<div class="w3-container" style="padding:128px 16px;background-color:#c1e8f0" id="techgalz">-->
+  <h1 class="w3-center" style = "color:#FFFFFF; font-size: 60px"><b>Past Programs</b> </h1>
+  <div class="w3-row " style="margin-top:40px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
+      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+      <p>Calabazas Library- Appnovators: June-August 2019</p>
+      <p>Calabazas Library- Techgalz: October-April 2018-2019</p>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background-color: #FFFFFF">
+  <a href="locations.html" class="w3-button" style="background-color: #ff8080"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p> © 2019 by Codenovate. All Rights Reserved.  </p>
+  <p> We are a 501 (c) 3 non-profit organization with an EIN of 84-2924847</p>
+  <p> Powered by HTML.</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

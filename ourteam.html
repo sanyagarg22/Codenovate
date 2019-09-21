@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Codenovate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: #c1e8f0;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+h1 {
+  font-size:40;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" style="background-color:#ff8080;height:60px;position:fixed">
+  <!-- class="w3-bar w3-white w3-card" -->
+  <div style="background-color:#ff8080" id="myNavbar">
+    <img src="https://lh3.googleusercontent.com/-HUhGMhfuh50/XUd18pXywUI/AAAAAAAAEvk/_jaM1lJrN08i9BDdaCrSpeM7vyty0w7_ACK8BGAs/s0/haha.JPG" alt="Codenovate logo" style="width:40px;height:55px;">
+    <a href="index.html" style="height:40px;position:absolute;top:50%;margin-top:-20px; color: #98d9e6" class="w3-bar-item w3-button w3-wide"><b>Codenovate<b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="background-color:#ff8080;height:40px;top:50%;margin-top:10px">
+      <a href="aboutus.html" style= "color:white" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="ourteam.html" style= "color: white" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OUR TEAM</a>
+      <a href="programs.html" style= "color: white" class="w3-bar-item w3-button">PROGRAM DESCRIPTIONS</a>
+      <a href="locations.html" style= "color: white" class="w3-bar-item w3-button">LOCATIONS</a>
+      <a href="contact.html" style= "color: white" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="aboutus.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="ourteam.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="programs.html" onclick="w3_close()" class="w3-bar-item w3-button">PROGRAM DESCRIPTIONS</a>
+  <a href="locations.html" onclick="w3_close()" class="w3-bar-item w3-button">LOCATIONS</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
+</nav>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px;background-color:#FFFFFF" id="team">
+  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Our Team</b> <img src="https://lh3.googleusercontent.com/-KEseW0WskTE/XVOvQYgf9FI/AAAAAAAAE1A/DxZAgU6etdMMb3JKTAqI1r-MwDlCk7QdwCK8BGAs/s139/thingie.JPG" alt="Codenovate logo" style="width:80px;height:75px;"> </h1>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:2%;padding-left:5%" >
+      <div class="w3-card" >
+        <!--  <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Sanya Garg</h3>
+          <p class="w3-opacity">Founder and President</p>
+          <p>Hi! My name is Sanya Garg and I am currently a sophomore at Monta Vista High School. Some of my hobbies are: art in all forms, playing ping pong, and playing the violin.  I enjoy programming and have a lot of experience in Java, Python, and HTML & CSS. I am currently a member of my school's  robotics team and have been interested in robotics and programming since fourth grade. I additionally ran the robotics club in Kennedy Middle School and represented the United States at the FLL World Championships in Hungary.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:5%;padding-left:2%">
+      <div class="w3-card">
+        <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">-->
+        <div class="w3-container">
+          <h3>Malavika Vutukuru</h3>
+          <p class="w3-opacity">Officer</p>
+          <p>Hello! My name is Malavika Vutukuru and I am also a 10th grader at Monta Vista High School. In school I am a part of the band program and play the trombone. Outside of school, I have been taking Carnatic singing classes for 9 years. I also volunteer as an escort at the Mountain View El Camino Hospital. I am currently taking Java in school and have prior experience in Python and Machine Learning from completing online courses through Coursera. I am also an active member of the robotics team at school. <br>             </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:2%;padding-left:5%; margin-top: 50px">
+      <div class="w3-card">
+        <!--<img src="/w3images/team3.jpg" alt="Mike" style="width:100%">-->
+        <div class="w3-container">
+          <h3>Catherine Laserna</h3>
+          <p class="w3-opacity">Officer</p>
+          <p>I'm currently a sophomore at Sierra Pacific in Central California. I have experience in HTML/CSS, Java and Python. Outside of programming, I am able to Photoshop images and edit videos. I'm currently a part of my high school's colorguard team, performing with our marching band at football games.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:5%;padding-left:2%; margin-top: 50px">
+      <div class="w3-card">
+        <!-- <img src="/w3images/team4.jpg" alt="Dan" style="width:100%"> -->
+        <div class="w3-container">
+          <h3>Shannon Wang</h3>
+          <p class="w3-opacity">Officer</p>
+          <p>Hey! My name is Shannon Wang and I'm currently a 10th grader at Cupertino High School. At school, I'm in FBLA, Women in Tech, and National Math Honor Society. In my free time, I enjoy playing the guitar, dancing, singing, and coding. I've been singing in choir for more than 10 years, and I have 3 years of programming experience. I am well-versed in Java, Python, and SQL, and I am comfortable working with HTML/CSS.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:2%;padding-left:5%; margin-top: 50px">
+      <div class="w3-card">
+        <!--<img src="/w3images/team3.jpg" alt="Mike" style="width:100%">-->
+        <div class="w3-container">
+          <h3>Sejal Rathi</h3>
+          <p class="w3-opacity">Officer</p>
+          <p>Hi! My name is Sejal Rathi and I am currently a sophomore at Lynbrook High School. At school, I am part of Math Honor Society, Computer Science Club, and Women in STEM. In my free time, I enjoy playing piano, dancing, doing math, and coding. I have over 4 years of programming experience in various languages and I am fluent in Java, Python, and HTML/CSS. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:2%;padding-left:5%; margin-top: 50px">
+      <div class="w3-card">
+        <!--<img src="/w3images/team3.jpg" alt="Mike" style="width:100%">-->
+        <div class="w3-container">
+          <h3>Audrey Acken</h3>
+          <p class="w3-opacity">Officer</p>
+          <p>Hi, I’m Audrey and I’m a 10th grader at the Nueva school. I started learning how to program in middle school and I have experience in python, java, and javascript. I’ve also taken an intro to machiene learning class at my school and am familiar with some unsupervised and supervised machiene learning models. Outside of school, I enjoy drawing, reading, playing violin, martial arts, and spending time with my friends and family and dog :) </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64" style="background-color: #c1e8f0">
+  <a href="ourteam.html" class="w3-button" style="background-color: #ff8080"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p> © 2019 by Codenovate. All Rights Reserved.  </p>
+  <p> We are a 501 (c) 3 non-profit organization with an EIN of 84-2924847</p>
+  <p> Powered by HTML.</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
