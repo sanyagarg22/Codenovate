@@ -23,6 +23,18 @@ body, html {
   background-color: #c1e8f0;
 }
 
+.w3-animate-bottom{
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0%   {top:20px;}
+  100% {top:0px;}
+}
+
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -86,12 +98,12 @@ h1 {
 <header class="bgimg-1 w3-display-container w3-grayscale" id="home">
   <div class="w3-display-left w3-text-white" style="text-align:center;width:100%">
     <!-- class="w3-jumbo w3-hide-small" -->
-    <span style="color:#00ffff;font-size:100px;"><b>Codenovate</b></span><br>
+    <span class = "w3-animate-bottom" style="color:#00ffff;font-size:100px"><b>Codenovate</b></span><br>
     <!-- <span class="w3-xxlarge w3-hide-large w3-hiddenovate</span><br> -->
     <!-- class="w3-large" -->
-    <span style="color:#ffffff;font-size:40px"><b>Inspiring kids to innovate with code.</b></span>
+    <span class = "w3-animate-bottom" style="color:#ffffff;font-size:40px"><b>Inspiring kids to innovate with code.</b></span>
     <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about us</a></p> -->
-    <p><a href="aboutus.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Learn more about us</a></p>
+    <p><a href="aboutus.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-animate-bottom">Learn more about us</a></p>
   </div>
 
 </header>
@@ -105,10 +117,10 @@ h1 {
 
   </div>
 
-  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Sponsors</b></h1>
+  <h1 class="w3-center w3-animate-bottom" style = "color:#98d9e6; font-size: 50px"><b>Sponsors</b></h1>
   <div class="w3-center" style="margin-top:1px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
       <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
-    <img src="https://inclusion.cs.umd.edu/sites/mcwic.cs.umd.edu/files/ai4all-logo.jpg" alt="Appnovators logo" style="width:200px;height:150px;">
+    <img src="https://inclusion.cs.umd.edu/sites/mcwic.cs.umd.edu/files/ai4all-logo.jpg" alt="Appnovators logo" class="w3-animate-bottom" style="width:200px;height:150px;">
 
   </div>
 </div>
