@@ -40,6 +40,36 @@ body, html {
   padding: 16px;
 }
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 h1 {
   font-size:40;
 }
@@ -81,15 +111,14 @@ h1 {
 </nav>
 
 <!-- Contact Section -->
-<div class="w3-container" style="background-color:#FFFFFF; padding:128px 16px" id="contact">
+<div class="w3-container" style="background-color:#FFFFFF; padding:128px 20px" id="contact">
   <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Contact Us</b></h1>
-  <p class="w3-center w3-large" style="color: #ff8080">Get in touch with us to learn more about our program and how you can get involved.</p>
-  <div style="margin-top:100px; font-size:15px">
+  <div class = "w3-center" style="margin-top:5px; font-size:15px">
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color: #98d9e6"> </i>  Email: mail.codenovate@gmail.com</p>
+    
+    <p> Interested in volunteering for Codenovate? Fill out <span style="color:#ff8080"> <a href="https://forms.gle/zWoxy1s7XAi2vzep6"> this form. </a> </span></p>
     <br>
-    <p> If you are interested in volunteering for Codenovate, please fill out <span style="color:#ff8080"> <a href="https://forms.gle/zWoxy1s7XAi2vzep6"> this form. </a> </span></p>
-    <br>
-    <!--<form action="/action_page.php" target="_blank">
+    <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
@@ -99,7 +128,7 @@ h1 {
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>-->
+    </form>
   </div>
 </div>
 
