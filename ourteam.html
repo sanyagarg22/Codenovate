@@ -22,6 +22,59 @@ body, html {
   background-color: #c1e8f0;
 }
 
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .w3-animate-bottom{
   position: relative;
   animation-name: example;
@@ -95,8 +148,8 @@ h1 {
 
 
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px;background-color:#FFFFFF" id="team">
-  <h1 class="w3-center w3-animate-bottom" style = "color:#98d9e6; font-size: 50px"><b>Our Team</b> <img src="https://lh3.googleusercontent.com/-KEseW0WskTE/XVOvQYgf9FI/AAAAAAAAE1A/DxZAgU6etdMMb3JKTAqI1r-MwDlCk7QdwCK8BGAs/s139/thingie.JPG" alt="Codenovate logo" style="width:80px;height:75px;"> </h1>
+<div class="w3-container fade-in" style="padding:128px 16px;background-color:#FFFFFF" id="team">
+  <h1 class="w3-center" style = "color:#98d9e6; font-size: 50px"><b>Our Team</b> <img src="https://lh3.googleusercontent.com/-KEseW0WskTE/XVOvQYgf9FI/AAAAAAAAE1A/DxZAgU6etdMMb3JKTAqI1r-MwDlCk7QdwCK8BGAs/s139/thingie.JPG" alt="Codenovate logo" style="width:80px;height:75px;"> </h1>
   <div class="w3-row-padding w3-grayscale w3-animate-bottom" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom" style="width:50%;padding-right:2%;padding-left:5%" >
       <div class="w3-card" >

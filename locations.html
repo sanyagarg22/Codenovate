@@ -22,6 +22,59 @@ body, html {
   background-color: #c1e8f0;
 }
 
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .w3-animate-bottom{
   position: relative;
   animation-name: example;
@@ -95,7 +148,7 @@ h1 {
 
 
 <!-- Locations Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="locations" style="background-color:#FFFFFF; " >
+<div class="w3-row-padding w3-padding-64 w3-theme-l1 fade-in" id="locations" style="background-color:#FFFFFF; " >
   <h1 class="w3-center" style = "color:#c1e8f0; font-size: 50px"><b>Upcoming and Current Programs</b></h1>
 
 <div class="w3-quarter" style="margin-top:50px;width:49%;padding-right:2%;padding-left:10%; margin-bottom:0px">
