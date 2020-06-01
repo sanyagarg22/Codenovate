@@ -76,6 +76,41 @@ body, html {
   }
 }
 
+.counters {
+	color: #fff;
+	padding: 40px 20px;
+}
+
+.counters .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.counters i {
+	color: lightskyblue;
+	margin-bottom: 5px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		border-bottom: 1px lightskyblue solid;
+		padding-bottom: 20px;
+	}
+}
+
+
 /*
 .w3-animate-bottom{
   position: relative;
@@ -163,6 +198,27 @@ h1 {
 
 </header>
 
+<section class="counters">
+			<div class="container">
+				<div>
+					<div class="counter" style="color:#ff8080">200+</div>
+					<h3>Students Taught</h3>
+				</div>
+				<div>
+					<div class="counter" style="color:#ff8080" >100+</div>
+					<h3>Sessions Held</h3>
+				</div>
+				<div>
+					<div class="counter" style="color:#ff8080">3</div>
+					<h3>Chapters</h3>
+				</div>
+				<div>
+					<div class="counter" style="color:#ff8080">5</div>
+					<h3>Courses</h3>
+				</div>
+			</div>
+</section>
+
 <div class="w3-container" style="padding:40px 1px 80px 1px; background-color:#FFFFFF" id="about">
   <div class="w3-row-padding fade-in" style="margin-top:1px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
       <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
@@ -189,6 +245,7 @@ h1 {
 </footer>
 
 <script>
+
 
 $('.sanya').ready(function(){
     let controller = new ScrollMagic.Controller();
