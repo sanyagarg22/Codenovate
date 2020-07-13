@@ -16,6 +16,10 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <style>
+
+@font-face { font-family: Playlist; src: url('PlaylistScript.OTF'); }
+
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
   height: 100%;
@@ -184,7 +188,7 @@ h1 {
 <header class="bgimg-1 w3-display-container w3-grayscale" id="home">
   <div class="w3-display-left w3-text-white fade-in" style="text-align:center;width:100%;margin-top:90px">
     <span  style="color:#00ffff;font-size:110px"><b>Codenovate</b></span><br>
-    <span  style="color:#ffffff;font-size:40px"><b>Inspiring kids to innovate with code.</b></span>
+    <span class="h3" style="color:#ffffff;font-size:40px"><b>inspiring kids to innovate with code.</b></span>
     <br>
     <a href="#about"><img src="Arrow.gif" id="desc" alt="Down arrow" width="150px"></a>
   </div>
@@ -206,8 +210,8 @@ h1 {
 					<h3>Chapters</h3>
 				</div>
 				<div>
-					<div class="counter" style="color:#ff8080">5</div>
-					<h3>Courses</h3>
+					<div class="counter" style="color:#ff8080">6</div>
+					<h3>States</h3>
 				</div>
 			</div>
 </section>
@@ -237,14 +241,33 @@ h1 {
   </div>
 
   <h1 class="w3-center" style = "margin-top:50px;color:#98d9e6; font-size: 50px"><b>Partners</b></h1>
-  <div class="w3-center" style="margin-top:-80px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
-    <img src="GirlGeniusLogo.png" alt="Balsamiq logo" style="width:200px;height:200px;"> </img>
-    <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:20px;height:150px;"> </img>
-    <img src="ReinventedLogo.png" alt="Balsamiq logo" style="width:450px;height:350px;"> </img>
-    <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:20px;height:120px;" </img>
-    <img src="CRLogo.svg" alt="Balsamiq logo" style="width:240px;height:180px;"> </img>
-    <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:20px;height:100px;" </img>
-    <img src="ainspirelogo.png" alt="Balsamiq logo" style="width:200px;height:160px;"> </img>
+  <div class="w3-center" style="margin-top:-60px;margin-left:120px;margin-right:120px;font-size:20px;color:#808080">
+    <div class="w3-row"><br>
+      <img src="GirlGeniusLogo.png" alt="GG logo" style="width:200px;height:200px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:20px;height:20px;"> </img>
+      <img src="ReinventedLogo.png" alt="Reinvented Mag logo" style="width:380px;height:150px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:20px;height:20px;" </img>
+      <img src="CRLogo.svg" alt="Challenge Rocket logo" style="width:240px;height:180px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:20px;height:20px;" </img>
+      </div>
+    <div class="w3-row"><br>
+      <img src="ainspirelogo.png" alt="AInspire logo" style="width:200px;height:160px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:50px;height:20px;" </img>
+      <img src="miplogo.jpg" alt="MIP logo" style="width:220px;height:220px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:50px;height:20px;" </img>
+      <img src="SPLogo.png" alt="MIP logo" style="width:200px;height:200px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:50px;height:20px;" </img>
+      <img src="STGLogo.png" alt="MIP logo" style="width:200px;height:200px;"> </img>
+    </div>
+    <div class="w3-row"><br>
+      <img src="VoluntYOULogo.png" alt="AInspire logo" style="width:170px;height:160px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:50px;height:20px;" </img>
+      <img src="gfslogo.png" alt="MIP logo" style="width:200px;height:200px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:50px;height:20px;" </img>
+      <img src="ctf.jpg" alt="MIP logo" style="width:200px;height:120px;"> </img>
+      <img src="https://lh3.googleusercontent.com/-0qeFl-OC5Ss/XuGPr_8uquI/AAAAAAAAGRM/zvQhx0MER4MAvylkSMlFQmL9UdyqeA8oQCK8BGAsYHg/s111/white.PNG" alt="whitespace" style="width:50px;height:20px;" </img>
+      <img src="halos.png" alt="MIP logo" style="width:220px;height:200px;"> </img>
+    </div>
   </div>
 
 </div>
