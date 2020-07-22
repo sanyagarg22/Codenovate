@@ -105,6 +105,18 @@ body, html {
   padding: 16px;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h1 {
   font-size:40;
 }
@@ -148,11 +160,14 @@ h1 {
 
 <!-- Locations Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l1 fade-in" id="locations" style="background-color:#FFFFFF; " >
-  <h1 class="w3-center" style = "margin-top:80px; color:#c1e8f0; font-size: 50px"><b>Upcoming and Current Virtual Workshops</b></h1>
 
   <!-- TEMPORARY!!!!!!!! -->
   <div class="w3-center " style="margin-top:30px;margin-left:120px;margin-right:120px;font-size:22px;color:#808080">
-      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i> -->
+
+  <h1 class="w3-center" style = "margin-top:60px; color:#c1e8f0; font-size: 50px"><b>Upcoming Virtual Workshops</b></h1>
+
+
+      <!--<i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
       <p>Register for virtual workshops<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</p>
       <p>
         <br>  <span style="color:#ff8080"> Intro to AppInventor: </span> July 24,  10pm-11:30am
@@ -163,7 +178,122 @@ h1 {
         <br>  <span style="color:#ff8080"> Intro to FLL (Robotics): </span> August 12, 6-7:30pm
       </p>
       <p>*All times in PST</p>
-      <p>All in-person sessions cancelled due to COVID-19.</p>
+      <p>All in-person sessions cancelled due to COVID-19.</p> -->
+
+      <div class="w3-quarter" style="margin-top:50px;width:49%;padding-right:2%;padding-left:10%; margin-bottom:0px">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <p>Intro To AppInventor<p>
+        <h3>July 24,  10pm-11:30am PST</h3>
+        <h3>Register<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</h3>
+        <br>
+        </div>
+      </div>
+      </div>
+
+      <div class="w3-quarter" style="margin-top:50px;width:50%;padding-right:10%;padding-left:2%; margin-bottom:0px;">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <p>Intro To Python<p>
+        <h3>July 26, 10-11:30am PST</h3>
+        <h3>Register<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</h3>
+        <br>
+        </div>
+      </div>
+      </div>
+
+      <div class="w3-quarter" style="margin-top:50px;width:49%;padding-right:2%;padding-left:10%; margin-bottom:0px">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <p>Scratch + Code.org<p>
+        <h3>July 31, 2:30-4pm PST</h3>
+        <h3>Register<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</h3>
+        <br>
+        </div>
+      </div>
+      </div>
+
+      <div class="w3-quarter" style="margin-top:50px;width:50%;padding-right:10%;padding-left:2%; margin-bottom:0px;">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <p>Intro to Java + Github<p>
+        <h3>August 2, 1-2:30pm PST</h3>
+        <h3>Register<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</h3>
+        <br>
+        </div>
+      </div>
+      </div>
+
+      <div class="w3-quarter" style="margin-top:50px;width:49%;padding-right:2%;padding-left:10%; margin-bottom:0px">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <p>Web Dev (HTML/CSS/Javascript)<p>
+        <h3>August 8, 3-5pm PST</h3>
+        <h3>Register<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</h3>
+        <br>
+        </div>
+      </div>
+      </div>
+
+      <div class="w3-quarter" style="margin-top:50px;width:50%;padding-right:10%;padding-left:2%; margin-bottom:0px;">
+      <div class="w3-card w3-white">
+        <div class="w3-container">
+        <p>Intro to FLL (Robotics)<p>
+        <h3>August 12, 6-7:30pm PST</h3>
+        <h3>Register<span style="color:#ff8080"> <a href="https://forms.gle/Mdv1YmZH8CKWS8Ec8"> here</a></span>.</h3>
+        <br>
+        </div>
+      </div>
+      </div>
+
+
+    <h1 class="w3-center" style = "margin-top:900px; color:#c1e8f0; font-size: 50px"><b>Chapters</b></h1>
+
+
+    <p>
+      <div class="row">
+      <div class="column">
+          South Pasadena, CA
+      </div>
+      <div class="column">
+          Charlotte, NC
+      </div>
+      <div class="column">
+           Morgantown, WV
+      </div>
+      </div>
+      <div class="row">
+      <div class="column">
+          Salt Lake City, UT
+      </div>
+      <div class="column">
+          Cupertino, CA
+      </div>
+      <div class="column">
+           New York, NY
+      </div>
+      </div>
+      <div class="row">
+      <div class="column">
+          Cambridge, ON (Canada)
+      </div>
+      <div class="column">
+          Hilsborough, CA
+      </div>
+      <div class="column">
+          Hanford, CA
+      </div>
+      </div>
+      <div class="row">
+      <div class="column">
+          San Jose, CA
+      </div>
+      <div class="column">
+          Edison, NJ
+      </div>
+    </div>
+  </p>
+</div>
 
   </div>
   <!-- DELETE TILL HERE -->
